@@ -1,0 +1,43 @@
+int id;
+char name[20];
+struct student_college_details know;
+};
+
+int main()
+{
+    struct student_details person;
+    struct student_details *p;
+    p=&person;
+    
+    int n;
+    printf("enter the no of persons\n");
+    scanf("%d",&n);
+    
+    for(int i=1;i<=n;i=i+1)
+    {
+        printf("details of person:%d",i);
+        
+        printf("\nthe id is:");
+        scanf("%d",&p->id);
+        
+        printf("\nthe name is:");
+        scanf("%s",&p->name);
+        
+        printf("\nthe college_name is:");
+        scanf("%s",&p->know.college_name);
+        
+        printf("\nthe college_place is:");
+        scanf("%s",&p->know.college_place);
+        
+    }
+    for (i=1;i<=n;i=i+1)
+    {
+        printf("\nthe details of person:%d",i);
+        printf("\nthe id of person is:%d",p->id)
+        printf("\nthe name is:%s",p->name);
+        printf("\nthe college_name is:%s",p->know.college_name);
+        printf("\nthe college_place is:p->know.college_place);
+}
+return 0;
+   
+}
